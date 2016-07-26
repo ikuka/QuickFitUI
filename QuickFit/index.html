@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html lang="en" class="ie8"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8"/>
+    <title>QuickFit系统首页</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+    <meta content="" name="description"/>
+    <meta content="" name="author"/>
+
+    <!-- ================== BEGIN BASE CSS STYLE ================== -->
+    <link href="assets/plugins/jquery-ui/themes/base/minified/jquery-ui.min.css" rel="stylesheet"/>
+    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="assets/css/animate.min.css" rel="stylesheet"/>
+    <link href="assets/css/style.min.css" rel="stylesheet"/>
+    <link href="assets/css/style-responsive.min.css" rel="stylesheet"/>
+    <link href="assets/css/theme/default.css" rel="stylesheet" id="theme"/>
+
+    <!-- ================== END BASE CSS STYLE ================== -->
+    <style>
+        .notify-arrow {
+            border-style: solid;
+            border-width: 0 9px 9px;
+            height: 0;
+            margin-top: 0;
+            opacity: 0;
+            position: absolute;
+            left: 7px;
+            top: -18px;
+            transition: all 0.25s ease 0s;
+            width: 0;
+            z-index: 10;
+            margin-top: 10px;
+            opacity: 1;
+        }
+        .notify-arrow-yellow {
+            border-color: transparent transparent #FCB322;
+            border-bottom-color: #FCB322 !important;
+            border-top-color: #FCB322 !important;
+        }
+        .notify-arrow-coral {
+            border-color: transparent transparent #41cac0;
+            border-bottom-color: #41cac0 !important;
+            border-top-color: #41cac0 !important;
+        }
+        .notify-arrow-red {
+            border-color: transparent transparent #ff6c60;
+            border-bottom-color: #ff6c60 !important;
+            border-top-color: #ff6c60 !important;
+        }
+        .notify-arrow-green {
+            border-color: transparent transparent #a9d86e;
+            border-bottom-color: #a9d86e !important;
+            border-top-color: #a9d86e !important;
+        }
+    </style>
+    <!-- ================== BEGIN BASE JS ================== -->
+    <script src="assets/plugins/pace/pace.min.js"></script>
+    <!-- ================== END BASE JS ================== -->
+</head>
+<body>
+<!-- begin #page-container -->
+<div id="page-container" class="fade page-sidebar-fixed page-header-fixed">
+    <!-- begin #header -->
+    <div id="header" class="header navbar navbar-default navbar-fixed-top">
+        <!-- begin container-fluid -->
+        <div class="container-fluid">
+            <!-- begin mobile sidebar expand / collapse button -->
+            <div class="navbar-header">
+                <a href="index.html" class="navbar-brand"><span class="navbar-logo "></span>QuickFit企业管理</a>
+            </div>
+            <!-- begin header navigation left -->
+            <div class="nav navbar-nav navbar-left">
+                <ul class="nav navbar-nav navbar-left">
+                    <!-- begin header navigation 项目进度-->
+                    <li class="dropdown">
+                        <a href="javascript:;" data-toggle="dropdown" class="dropdown-toggle f-s-17" style="padding: 2px 6px;border: 1px solid #f0f0f8;margin-top: 15px;margin-right:15px;border-radius:4px;-webkit-border-radius:4px">
+                            <i class="fa fa-tasks"></i>
+                            <span class="label" style="background: #a9d86e;right: -10px;top: -10px;z-index: 100;">5</span>
+                        </a>
+                        <ul class="dropdown-menu media-list pull-left animated fadeInDown" style="width: 240px !important;">
+                            <div class="notify-arrow notify-arrow-green"></div>
+                            <li class="dropdown-header" style="background-color: #a9d86e;color: #fff;">进行中的项目(<strong>5</strong>)</li>
+                            <li class="media">
+                                <a href="javascript:;" style="height: 56px">
+                                    <div>
+                                        <p class="media-heading">QuickFit系统界面UI设计长度测试长度测试长度车市</p>
+                                        <!--<div style="font-size: 13px;font-weight: normal;">QuickFit系统界面UI设计</div>-->
+                                        <div style="display: inline-block;float: right;font-size: 13px;font-weight: 600;padding-left: 10px;margin-top: -4px;">40%</div>
+                                    </div>
+                                    <div class="progress" style="height: 10px">
+                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                            <span class="sr-only">40% Complete (success)</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="media">
+                                <a href="javascript:;" style="height: 56px">
+                                    <div>
+                                        <p class="media-heading">数据库设计</p>
+                                        <!--<div style="font-size: 13px;font-weight: normal;">QuickFit系统界面UI设计</div>-->
+                                        <div style="display: inline-block;float: right;font-size: 13px;font-weight: 600;padding-left: 10px;margin-top: -4px;">60%</div>
+                                    </div>
+                                    <div class="progress" style="height: 10px">
+                                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                            <span class="sr-only">60% Complete (warning)</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="media">
+                                <a href="javascript:;" style="height: 56px">
+                                    <div>
+                                        <p class="media-heading">Iphone APP应用开发</p>
+                                        <!--<div style="font-size: 13px;font-weight: normal;">QuickFit系统界面UI设计</div>-->
+                                        <div style="display: inline-block;float: right;font-size: 13px;font-weight: 600;padding-left: 10px;margin-top: -4px;">87%</div>
+                                    </div>
+                                    <div class="progress" style="height: 10px">
+                                        <div class="progress-bar progress-bar-info" role="progressbar"
+                                             aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"
+                                             style="width: 87%">
+                                            <span class="sr-only">87% Complete</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="media">
+                                <a href="javascript:;" style="height: 56px">
+                                    <div>
+                                        <p class="media-heading">Android APP开发</p>
+                                        <!--<div style="font-size: 13px;font-weight: normal;">QuickFit系统界面UI设计</div>-->
+                                        <div style="display: inline-block;float: right;font-size: 13px;font-weight: 600;padding-left: 10px;margin-top: -4px;">33%</div>
+                                    </div>
+                                    <div class="progress" style="height: 10px">
+                                        <div class="progress progress-striped">
+                                            <div class="progress-bar progress-bar-danger" role="progressbar"
+                                                 aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                                                 style="width: 33%">
+                                                <span class="sr-only">33% Complete (danger)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="media">
+                                <a href="javascript:;" style="height: 56px">
+                                    <div>
+                                        <p class="media-heading">QuickFit CS客户端开发</p>
+                                        <!--<div style="font-size: 13px;font-weight: normal;">QuickFit系统界面UI设计</div>-->
+                                        <div style="display: inline-block;float: right;font-size: 13px;font-weight: 600;padding-left: 10px;margin-top: -4px;">45%</div>
+                                    </div>
+                                    <div class="progress" style="height: 10px">
+                                        <div class="progress progress-striped active">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="45"
+                                                 aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+                                                <span class="sr-only">45% Complete</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="dropdown-footer text-center" >
+                                <a href="javascript:;"><i class="fa fa-tasks f-s-15 m-r-5"></i>项目库</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- end header navigation 项目进度-->
+                    <!-- begin header navigation 邮件-->
+                    <li class="dropdown">
+                        <a href="javascript:;" data-toggle="dropdown" class="dropdown-toggle f-s-17" style="padding: 2px 6px;border: 1px solid #f0f0f8;margin-top: 15px;margin-right:15px;border-radius:4px;-webkit-border-radius:4px">
+                            <i class="fa fa-envelope-o"></i>
+                            <span class="label" style="background: #ff6c60;right: -10px;top: -10px;z-index: 100;">4</span>
+                        </a>
+                        <ul class="dropdown-menu media-list pull-left animated fadeInDown" style="width: 250px !important;">
+                            <div class="notify-arrow notify-arrow-red"></div>
+                            <li class="dropdown-header" style="background-color: #ff6c60;color: #fff;">
+                                新邮件(<strong>4</strong>)
+                            </li>
+                            <li class="media">
+                                <a href="javascript:;">
+                                    <div class="media-body">
+                                        <p class="media-heading width-250">申奥项目进度汇报长度测试长度测试长度车市</p>
+                                        <span>张三</span>
+                                        <span class="text-muted f-s-11 pull-right">2015-10-10 09:30:12</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="media">
+                                <a href="javascript:;">
+                                    <div class="media-body">
+                                        <p class="media-heading width-250">武汉抗洪救灾情况汇报</p>
+                                        <span>李四</span>
+                                        <span class="text-muted f-s-11 pull-right">2015-10-10 09:30:12</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="media">
+                                <a href="javascript:;">
+                                    <div class="media-body">
+                                        <p class="media-heading width-250">禁止手机游戏中出现英文</p>
+                                        <span>王五</span>
+                                        <span class="text-muted f-s-11 pull-right">2015-10-10 09:30:12</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="media">
+                                <a href="javascript:;">
+                                    <div class="media-body">
+                                        <p class="media-heading width-250">南海问题道歉</p>
+                                        <span>奥巴马</span>
+                                        <span class="text-muted f-s-11 pull-right">2015-10-10 09:30:12</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="dropdown-footer text-center">
+                                <a href="email_inbox.html"><i class="fa fa-envelope-o f-s-15 m-r-5"></i>个人邮箱</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- end header navigation 邮件-->
+                    <!-- begin header navigation 消息提醒-->
+                    <li class="dropdown">
+                        <a href="javascript:;" data-toggle="dropdown" class="dropdown-toggle f-s-17" style="padding: 2px 6px;border: 1px solid #f0f0f8;margin-top: 15px;margin-right:15px;border-radius:4px;-webkit-border-radius:4px">
+                            <i class="fa fa-bell-o"></i>
+                            <span class="label" style="background: #FCB322;right: -10px;top: -10px;z-index: 100;">10</span>
+                        </a>
+                        <ul class="dropdown-menu media-list pull-left animated fadeInDown" style="width: 240px !important;">
+                            <div class="notify-arrow notify-arrow-yellow"></div>
+                            <li class="dropdown-header" style="background-color: #FCB322;color: #fff;">
+                                新消息(<strong>10</strong>)
+                            </li>
+                            <li class="media">
+                                <a href="javascript:;">
+                                    <div class="media-body">
+                                        <p class="media-heading">报销申请[BX1601021]审核通过长度测试长度测试长度车市</p>
+                                        <div class="text-muted f-s-11">2015-10-12</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="media">
+                                <a href="javascript:;">
+                                    <div class="media-body">
+                                        <p class="media-heading">订单[PO1601012]5天后发货</p>
+                                        <div class="text-muted f-s-11">2015-10-12</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="media">
+                                <a href="javascript:;">
+                                    <div class="media-body">
+                                        <p class="media-heading">任务[T0012311]即将到期</p>
+                                        <div class="text-muted f-s-11">2015-10-12</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="media">
+                                <a href="javascript:;">
+                                    <div class="media-body">
+                                        <p class="media-heading">请假申请[KQ1601021]审核通过</p>
+                                        <div class="text-muted f-s-11">2015-10-12</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="media">
+                                <a href="javascript:;">
+                                    <div class="media-body">
+                                        <p class="media-heading">物料[WL11221]低于库存警戒</p>
+                                        <div class="text-muted f-s-11">2015-10-12</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="dropdown-footer text-center">
+                                <a href="sys_message.html"><i class="fa fa-bell-o f-s-15 m-r-5"></i>消息中心</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- end header navigation 消息提醒-->
+                    <!-- begin header navigation 通知公告-->
+                    <li class="dropdown">
+                        <a href="javascript:;" data-toggle="dropdown" class="dropdown-toggle f-s-17" style="padding: 2px 6px;border: 1px solid #f0f0f8;margin-top: 15px;margin-right:15px;border-radius:4px;-webkit-border-radius:4px">
+                            <i class="fa fa-bullhorn"></i>
+                            <span class="label" style="background: #41cac0;right: -10px;top: -10px;z-index: 100;">3</span>
+                        </a>
+                        <ul class="dropdown-menu media-list pull-left animated fadeInDown" style="width: 240px;">
+                            <div class="notify-arrow notify-arrow-coral"></div>
+                            <li class="dropdown-header" style="background-color: #41cac0;color: #fff;">
+                                新公告(<strong>3</strong>)
+                            </li>
+                            <li class="media">
+                                <a href="javascript:;">
+                                    <div class="media-body">
+                                        <p class="media-heading">章XX任命为生产经理公告长度测试长度测试长度车市</p>
+                                        <div class="text-muted f-s-11">2015-10-12</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="media">
+                                <a href="javascript:;">
+                                    <div class="media-body">
+                                        <p class="media-heading">李XX任命为车间主任公告</p>
+                                        <div class="text-muted f-s-11">2015-10-12</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="media">
+                                <a href="javascript:;">
+                                    <div class="media-body">
+                                        <p class="media-heading">物料[WL11221]低于库存警戒</p>
+                                        <div class="text-muted f-s-11">2015-10-12</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="dropdown-footer text-center">
+                                <a href="sys_announcement.html"><i class="fa fa-bullhorn f-s-15 m-r-5"></i>公告中心</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- end header navigation 通知公告-->
+                </ul>
+            </div>
+            <!-- end header navigation right -->
+            <!-- begin header navigation right -->
+            <div class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="dropdown navbar-user">
+                        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+                            <img src="assets/img/user-13.jpg" alt=""/>
+                            <span class="hidden-xs">胡元庆</span> <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu animated fadeInLeft">
+                            <li class="arrow"></li>
+                            <li><a href="javascript:;" class="fa fa-user"><span class="m-l-10">个人信息</span></a></li>
+                            <!--<li><a href="email_inbox.html" class="fa fa-envelope-o"><span class="m-l-5">电子邮箱</span><span class="badge badge-danger pull-right">2</span></a></li>-->
+                            <li><a href="calendar.html" class="fa fa-calendar"><span class="m-l-10">工作日历</span></a></li>
+                            <li><a href="javascript:;" class="fa fa-cog"><span class="m-l-10">偏好设置</span></a></li>
+                            <li class="divider"></li>
+                            <li><a href="javascript:;" class="fa fa-power-off"><span class="m-l-10">退出系统</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- end header navigation right -->
+        </div>
+        <!-- end container-fluid -->
+    </div>
+    <!-- end #header -->
+
+
+    <!-- begin #sidebar -->
+    <div id="sidebar" class="sidebar">
+        <!-- begin sidebar scrollbar -->
+        <div data-scrollbar="true" data-height="100%">
+            <!-- begin sidebar user -->
+            <ul class="nav">
+                <li class="nav-profile">
+                    <div class="image">
+                        <a href="javascript:;"><img src="assets/img/user-13.jpg" alt=""/></a>
+                    </div>
+                    <div class="info">
+                        胡元庆
+                        <small>系统管理员</small>
+                    </div>
+                </li>
+            </ul>
+            <!-- end sidebar user -->
+            <!-- begin sidebar nav -->
+            <ul class="nav">
+                <!--<li class="nav-header">菜单导航</li>-->
+                <li class="has-sub">
+                    <a href="javascript:;">
+                        <b class="caret pull-right"></b>
+                        <i class="fa fa-cogs"></i>
+                        <span>系统管理</span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="">人员管理</a></li>
+                        <li><a href="">部门设置</a></li>
+                        <li><a href="">菜单设置</a></li>
+                        <li><a href="">权限管理</a></li>
+                    </ul>
+                </li>
+                <li class="has-sub">
+                    <a href="javascript:;">
+                        <b class="caret pull-right"></b>
+                        <i class="fa fa-random"></i>
+                        <span>流程管理</span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="">流程设计</a></li>
+                        <li><a href="">流程监控</a></li>
+                        <li><a href="">流程分析</a></li>
+                    </ul>
+                </li>
+                <li class="has-sub active">
+                    <a href="javascript:;">
+                        <b class="caret pull-right"></b>
+                        <i class="fa fa-tachometer"></i>
+                        <span>运营看板</span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li class="active"><a href="index.html">订单</a></li>
+                        <li><a href="index.html">财务</a></li>
+                        <li><a href="index.html">生产</a></li>
+                        <li><a href="index.html">项目</a></li>
+                    </ul>
+                </li>
+                <li class="has-sub">
+                    <a href="javascript:;">
+                        <b class="caret pull-right"></b>
+                        <i class="fa fa-navicon"></i>
+                        <span>项目管理</span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="">执行看板</a></li>
+                        <li><a href="">项目库</a></li>
+                        <li><a href="">项目设置</a></li>
+                        <li><a href="">查询统计</a></li>
+                    </ul>
+                </li>
+                <li class="has-sub">
+                    <a href="javascript:;">
+                        <b class="caret pull-right"></b>
+                        <i class="fa fa-sort-amount-asc"></i>
+                        <span>工序管理</span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="">工序分类</a></li>
+                        <li><a href="">基础工序</a></li>
+                    </ul>
+                </li>
+                <li class="has-sub">
+                    <a href="javascript:;">
+                        <b class="caret pull-right"></b>
+                        <i class="fa fa-cube"></i>
+                        <span>产品管理</span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="">产品分类</a></li>
+                        <li><a href="">产品库</a></li>
+                        <li><a href="">产品工艺</a></li>
+                        <li><a href="">价格数据</a></li>
+                        <li><a href="">自定义属性</a></li>
+                    </ul>
+                </li>
+                <li class="has-sub">
+                    <a href="javascript:;">
+                        <b class="caret pull-right"></b>
+                        <i class="fa fa-file-word-o"></i>
+                        <span>文档管理</span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="">文档分类</a></li>
+                        <li><a href="">文档库</a></li>
+                    </ul>
+                </li>
+                <li class="has-sub">
+                    <a href="javascript:;">
+                        <b class="caret pull-right"></b>
+                        <i class="fa fa-wrench"></i>
+                        <span>设备管理</span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="">设备监控</a></li>
+                        <li><a href="">设备分类</a></li>
+                        <li><a href="">设备台帐</a></li>
+                        <li><a href="">备件管理</a></li>
+                        <li><a href="">维保管理</a></li>
+                    </ul>
+                </li>
+                <li class="has-sub">
+                    <a href="javascript:;">
+                        <b class="caret pull-right"></b>
+                        <i class="fa fa-shield"></i>
+                        <span>质量管理</span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="">物料检测标准</a></li>
+                        <li><a href="">产品检测标准</a></li>
+                        <li><a href="">物料检测记录</a></li>
+                    </ul>
+                </li>
+                <li class="has-sub">
+                    <a href="javascript:;">
+                        <b class="caret pull-right"></b>
+                        <i class="fa fa-calendar-o"></i>
+                        <span>车间计划</span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="">生产监控</a></li>
+                        <li><a href="">生产计划</a></li>
+                        <li><a href="">日产计划</a></li>
+                    </ul>
+                </li>
+                <li class="has-sub">
+                    <a href="javascript:;">
+                        <b class="caret pull-right"></b>
+                        <i class="fa fa-code-fork"></i>
+                        <span>过程管理</span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="">计划跟踪</a></li>
+                        <li><a href="">产品跟踪</a></li>
+                        <li><a href="">现场看板维护</a></li>
+                    </ul>
+                </li>
+                <li class="has-sub">
+                    <a href="javascript:;">
+                        <b class="caret pull-right"></b>
+                        <i class="fa fa-users"></i>
+                        <span>人资管理</span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="">员工管理</a></li>
+                        <li><a href="">技能设置</a></li>
+                        <li><a href="">岗位设置</a></li>
+                        <li><a href="">薪资管理</a></li>
+                    </ul>
+                </li>
+                <li class="has-sub">
+                    <a href="javascript:;">
+                        <b class="caret pull-right"></b>
+                        <i class="fa fa-smile-o"></i>
+                        <span>客户管理</span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="">客户分类</a></li>
+                        <li><a href="">客户列表</a></li>
+                    </ul>
+                </li>
+                <li class="has-sub">
+                    <a href="javascript:;">
+                        <b class="caret pull-right"></b>
+                        <i class="fa fa-truck"></i>
+                        <span>供应商管理</span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="">供应商分类</a></li>
+                        <li><a href="">供应商列表</a></li>
+                        <li><a href="">供货记录</a></li>
+                        <li><a href="">查询统计</a></li>
+                    </ul>
+                </li>
+                <li class="has-sub">
+                    <a href="javascript:;">
+                        <b class="caret pull-right"></b>
+                        <i class="fa fa-file-pdf-o"></i>
+                        <span>订单管理</span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="">订单录入</a></li>
+                        <li><a href="">订单评审</a></li>
+                        <li><a href="">订单跟踪</a></li>
+                        <li><a href="">查询统计</a></li>
+                    </ul>
+                </li>
+                <li class="has-sub">
+                    <a href="javascript:;">
+                        <b class="caret pull-right"></b>
+                        <i class="fa fa-institution alias"></i>
+                        <span>仓库管理</span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="">物品分类</a></li>
+                        <li><a href="">物品列表</a></li>
+                        <li><a href="">入库管理</a></li>
+                        <li><a href="">出库管理</a></li>
+                        <li><a href="">出入库查询</a></li>
+                    </ul>
+                </li>
+                <li class="has-sub">
+                    <a href="javascript:;">
+                        <b class="caret pull-right"></b>
+                        <i class="fa fa-database"></i>
+                        <span>财务管理</span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li><a href="">开票信息</a></li>
+                        <li><a href="">付款</a></li>
+                        <li><a href="">收款</a></li>
+                        <li><a href="">统计分析</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- end sidebar nav -->
+        </div>
+        <!-- end sidebar scrollbar -->
+    </div>
+    <div class="sidebar-bg"></div>
+    <!-- end #sidebar -->
+
+    <!-- begin #content -->
+    <div id="content" class="content">
+        <!-- begin page-header -->
+        <h1 class="page-header">管理看板
+            <small>为企业管理人员提供决策辅助</small>
+        </h1>
+        <!-- end page-header -->
+
+        <div class="panel panel-inverse">
+            <div class="panel-heading">
+                <!--               <div class="panel-heading-btn">
+                                   <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i
+                                           class="fa fa-expand"></i></a>
+                                   <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i
+                                           class="fa fa-repeat"></i></a>
+                                   <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning"
+                                      data-click="panel-collapse"><i class="fa fa-minus"></i></a>
+                                   <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger"
+                                      data-click="panel-remove"><i class="fa fa-times"></i></a>
+                               </div>-->
+                <h4 class="panel-title">订单额统计</h4>
+            </div>
+            <div class="panel-body">
+                Panel Content Here
+            </div>
+        </div>
+    </div>
+    <!-- end #content -->
+</div>
+<!-- end page container -->
+
+<!-- ================== BEGIN BASE JS ================== -->
+<script src="assets/plugins/jquery/jquery-1.9.1.min.js"></script>
+<script src="assets/plugins/jquery/jquery-migrate-1.1.0.min.js"></script>
+<script src="assets/plugins/jquery-ui/ui/minified/jquery-ui.min.js"></script>
+<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<!--[if lt IE 9]>
+<script src="assets/crossbrowserjs/html5shiv.js"></script>
+<script src="assets/crossbrowserjs/respond.min.js"></script>
+<script src="assets/crossbrowserjs/excanvas.min.js"></script>
+<![endif]-->
+<script src="assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+<script src="assets/plugins/jquery-cookie/jquery.cookie.js"></script>
+<!-- ================== END BASE JS ================== -->
+
+<!-- ================== BEGIN PAGE LEVEL JS ================== -->
+<script src="assets/js/apps.min.js"></script>
+<!-- ================== END PAGE LEVEL JS ================== -->
+
+<script>
+    $(document).ready(function () {
+        App.init();
+    });
+</script>
+</body>
+</html>
